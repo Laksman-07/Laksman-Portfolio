@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Laksman.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="menu-icon-div">
+            <i class="material-icons menu-icon" onclick="openNav()">menu</i>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="closebtn" onclick="closeNav()"> <i style="cursor: pointer;" class="material-icons">close</i></div>
+            <div class="sidenav-parent">
+                <div class="sidenav-items">
+                    <div class="sidenav-home" onclick="location.href='#';closeNav()">
+                        <p>HOME</p>
+                    </div>
+
+                    <div onclick="goalclick();closeNav()">
+                        <p>ABOUT</p>
+                    </div>
+                    <div onclick="projectclick();closeNav()">
+                        <p>ACHIEVEMENTS</p>
+                    </div>
+                    <div onclick="contactclick();closeNav()">
+                        <p>CONTACT</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="home">
+        <div class="maintopnav">
+            <div class="topnav">
+
+                <div onclick="location.href='#';" class="topnavdiv">
+                    <a href="#">HOME</a>
+                </div>
+                <div onclick="goalclick()" class="topnavdiv">
+                    <a>ABOUT</a>
+                </div>
+                <div onclick="projectclick()" class="topnavdiv">
+                    <a>ACHIEVEMENTS</a>
+                </div>
+                <div onclick="contactclick()" class="topnavdiv">
+                    <a>CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <div class="title" id="home">
+            <div class="title-des">
+                <h1>Hello,I'm Laksman.</h1>
+                <p>Take a Glance</p>
+
+            </div>
+            <div style="margin-left: 60%;">
+                <img style="width:50vh;border-radius: 50%;" src="images/laksman.png" alt="error">
+            </div>
+        </div>
+        <div class="arrow-container animated fadeInDown">
+            <div>
+                <div class="icon" style="margin-left: 10vh;" onclick="scrolldown()">
+                    <i class="material-icons">
+                        keyboard_double_arrow_down
+                     </i>
+                </div>
+            </div>
+            <div class="arrow-1 animated hinge infinite zoomIn"></div>
+        </div>
+    </div>
+    <div id="home-bottom" style="height:100vh;"></div>
+    <div class="about" id="about">
+        <h1 class="title-left-text">ABOUT ME</h1>
+        <div class=" row col-lg-12 " style="margin-top: 7vh;height: 60vh;display: flex;justify-content: center;margin-left: 10vh;">
+            <div class="component" style="display:flex;flex-direction:column;width: 35%;">
+                <div class="box" style="display: flex;flex-grow: 1;">
+                    <div class="base-icon">
+                        <div class="icon">
+                            <i class="material-icons"> home</i>
+                        </div>
+                    </div>
+                    <div class="abt-description">
+                        <p>I Live in Chennai</p>
+                    </div>
+                </div>
+                <div class="box" style="display: flex;flex-grow: 1;">
+                    <div class="base-icon">
+                        <div class="icon">
+                            <i class="material-icons"> school</i>
+                        </div>
+                    </div>
+                    <div class="abt-description">
+                        <p>Pursuing B.Tech IT</p>
+                    </div>
+                </div>
+                <div class="box" style="display: flex;flex-grow: 1;">
+                    <div class="base-icon">
+                        <div class="icon">
+                            <i class="material-icons"> devices</i>
+                        </div>
+                    </div>
+                    <div class="abt-description">
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+                <div class="box" style="display: flex;flex-grow: 1;">
+                    <div class="base-icon">
+                        <div class="icon">
+                            <i class="material-icons">sports</i>
+                        </div>
+                    </div>
+                    <div class="abt-description">
+                        <p>Sports Enthusiast</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="component " style="width: 65%;">
+                <div>
+                    <div class="home-box">
+                        <div id="skills" style="padding-top: 3vh;">
+                            <h2>SKILLS</h2>
+                            <div class="skills">
+                                <div>
+                                    <div class="skills-div">
+                                        <p>
+                                            HTML
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="skills-bar" style="width: 60%;"></div>
+                                <div class="skills-per">
+                                    <p>90%</p>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div>
+                                    <div class="skills-div">
+                                        <p>
+                                            CSS
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="skills-bar" style="width: 50%;"></div>
+                                <div class="skills-per">
+                                    <p>80%</p>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div>
+                                    <div class="skills-div">
+                                        <p>
+                                            JS
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="skills-bar" style="width: 40%;"></div>
+                                <div class="skills-per">
+                                    <p>70%</p>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div>
+                                    <div class="skills-div">
+                                        <p>
+                                            SQL
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="skills-bar" style="width: 40%;"></div>
+                                <div class="skills-per">
+                                    <p>70%</p>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div>
+                                    <div class="skills-div">
+                                        <p>
+                                            PYTHON
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="skills-bar" style="width: 45%;"></div>
+                                <div class="skills-per">
+                                    <p>75%</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="about-bottom" style="height: 100vh;background-color: #f6f6f6;"></div>
+
+    <div class="projects" id="projects">
+        <h1 class="title-right-text" style="font-size: 4vh;padding-bottom: 2vh;">ACHIEVEMENTS</h1>
+        <div class=" row project-parent  ">
+            <div class="act " style="margin: 3vh 5vh 10vh 10vh;">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="height:100%;">
+                    <div class="carousel-inner" style="position:absolute;top:0;left:0;height: 100%;">
+                        <div class="carousel-item active sports">
+                            <img class="d-block w-100" src="images/1.JPG" alt="First slide">
+                        </div>
+                        <div class="carousel-item sports">
+                            <img class="d-block w-100" src="images/2.JPG" alt="Second slide">
+                        </div>
+                        <div class="carousel-item sports">
+                            <img class="d-block w-100" src="images/3.JPG" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+                <div style="background-color: #fff;padding: 2vh;border-radius: 0 0 15px 15px;height: 20vh;">
+                    <h1 style="font-size: 4vh;">PHOTOGRAPHY</h1>
+                    <p style="margin-bottom: 0;"><b>Covid-19 Awareness</b></p>
+                    <p>Won First place in Inter-Department Competition in College Fest (TALENTIA-2022)</p>
+                </div>
+            </div>
+            <div class="act" style="background-color:#686D76;margin: 3vh 10vh 10vh 5vh;">
+                <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel" style="height:100%;">
+                    <div class="carousel-inner" style="position:absolute;top:0;left:0;height: 100%;">
+                        <div class="carousel-item active sports">
+                            <img class="d-block w-100" src="images/5.JPG" alt="First slide">
+                        </div>
+                        <div class="carousel-item sports">
+                            <img class="d-block w-100" src="images/6.JPG" alt="Second slide">
+                        </div>
+                        <div class="carousel-item sports">
+                            <img class="d-block w-100" src="images/7.JPG" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+                <div style="background-color: #fff;padding: 2vh;border-radius: 0 0 15px 15px;height: 20vh;">
+                    <h1 style="font-size: 4vh;">SPORTSMAN</h1>
+                    <p style="margin-bottom: 0;"><b>Footballer and Cricketer</b></p>
+                    <p>Won POTM in Chennaiyin FC Tournament and many Box-Cricket Tournaments</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="project-bottom" style="height: 100vh; background-color: #232323;"></div>
+
+
+    <div class="contact " id="contacts">
+        <h1 class="title-left-text">CONTACT</h1>
+        <div class="contact-parent ">
+            <div class="contact-box ">
+                <div class="contact-text ">
+                    <div style="text-align: center; ">
+                        <p style="font-size: 3vh; ">Let's Chat.</p>
+                    </div>
+                    <div class="form-group ">
+                        <input type="text " name="name" class="form-control " placeholder="Enter Name" autocomplete="off">
+                    </div>
+                    <div class="form-group ">
+                        <input type="email " name="email" class="form-control " placeholder="Enter Email" autocomplete="off">
+                    </div>
+                    <div class="form-group ">
+                        <textarea class="form-control" name="message" rows="5 " placeholder="Enter Message " autocomplete="off"></textarea>
+                    </div>
+                    <div class="contact-btn-div ">
+                        <button class="btn btn-light contact-btn" onclick="popup()">Send Mail</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <i onclick="linkedclick()" class="fa fa-linkedin"> </i>
+            <i onclick="instagramclick()" class="fa fa-instagram"> </i>
+            <i onclick="gitclick()" class="fa fa-github"> </i>
+            <div style="text-align: center; margin-top: 4vh;">Copyright © Laksman.</div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "50% ";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0%";
+    }
+
+    function goalclick() {
+        document.getElementById("about").style.display = "block";
+        location.href = '#about';
+    }
+
+    function projectclick() {
+        document.getElementById("projects").style.display = "block";
+        location.href = '#projects';
+    }
+
+    function contactclick() {
+        document.getElementById("contacts").style.display = "block";
+        location.href = '#contacts';
+    }
+
+    function scrolldown() {
+        document.getElementById("about").style.display = "block";
+        location.href = '#about';
+    }
+
+
+    function linkedclick() {
+        window.open("https://www.linkedin.com/in/laksman-s-4162481b6/", "_blank ");
+    }
+
+    function instagramclick() {
+        window.open("https://www.instagram.com/laksman._.07/", "_blank ");
+    }
+
+    function gitclick() {
+        window.open("https://github.com/Laksman-07", "_blank ");
+    }
+
+    function popup() {
+        window.alert("Mail Sent Successfully!")
+        location.href = "#";
+    }
+
+    window.addEventListener("scroll", function() {
+        showFunction()
+    });
+
+    function showFunction() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            document.getElementById("home-bottom").style.height = 0;
+            document.getElementById("about").style.display = "block";
+
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                document.getElementById("about-bottom").style.height = 0;
+                document.getElementById("projects").style.display = "block";
+
+                if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
+                    document.getElementById("project-bottom").style.height = 0;
+                    document.getElementById("contacts").style.display = "block";
+
+                }
+            }
+
+
+        }
+
+    }
+</script>
+
+</html>
